@@ -30,54 +30,47 @@ Technical Breakdown:
 Data Handling:
 
 python
-Copy code
 X_train = np.array([...])
 y_train = np.array([...])
 Loaded and structured the dataset for training, ensuring it is ready for model consumption.
 Plotting Data Points:
 
 python
-Copy code
 plot_data(X_train, y_train, pos_label="Admitted", neg_label="Not admitted")
 Visualized the exam scores of admitted and non-admitted students, aiding in exploratory data analysis.
 Sigmoid Function:
 
 python
-Copy code
 def sigmoid(z):
     ...
 Implemented the sigmoid function to map input features to a probability range between 0 and 1.
 Cost Function Calculation:
 
 python
-Copy code
 def compute_cost(X, y, w, b):
     ...
 Calculated the cost to quantify the difference between predicted and actual values, guiding the optimization process.
 Gradient Computation:
 
 python
-Copy code
 def compute_gradient(X, y, w, b):
     ...
 Derived gradients for the weights and bias, crucial for the gradient descent algorithm to update parameters efficiently.
 Gradient Descent Implementation:
 
 python
-Copy code
 def gradient_descent(X, y, w_in, b_in, cost_function, gradient_function, alpha, num_iters, lambda_):
     ...
 Iteratively optimized the model parameters to minimize the cost function, ensuring high model accuracy.
 Decision Boundary Plotting:
 
 python
-Copy code
+
 plot_decision_boundary(w, b, X_train, y_train)
 Visualized the model's decision boundary, showcasing its classification capability.
 Model Prediction and Accuracy:
 
 python
-Copy code
 def predict(X, w, b):
     ...
 p = predict(X_train, w, b)
